@@ -211,6 +211,17 @@ h3 {font-size: 18px;}
 /*	Main Data  
 ========================================================================== */
 /*	Main Data Table  */
+.main-data__table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+.main-data__table thead tr th {
+	border-bottom-width: 1px;
+	background: #F6F6F6;
+}
+
+/*	Main Data Person  */
 .main-data__label {
 	font-weight: normal;
 	margin: 4px 0;
@@ -241,7 +252,7 @@ h3 {font-size: 18px;}
 .main-data__checkbox + span {
 	width: 18px;
 	height: 18px;
-	margin: -1px 4px 0 0;
+	margin: 5px 4px 0 0;
 	display: inline-block;
 	cursor: pointer;
 	border: 1px solid #CCCCCC;
