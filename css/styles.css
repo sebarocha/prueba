@@ -1,0 +1,307 @@
+/* 
+ *
+	This is the file where I'll put all the custom code for this test.
+	All CSS codes will be placed here to not edit/manage the other files.
+	@Author: Sebastian Rocha
+ *
+ * 
+*/
+
+/* ==========================================================================
+	GENERAL STYLES
+========================================================================== */
+/* font-family: Arial, Helvetica, sans-serif; */
+body {font-family: "Roboto", sans-serif; font-size: 14px; background: #FFFFFF;}
+h2, h3 {font-family: "Roboto", sans-serif;}
+h1 {font-family: "Roboto Condensed", sans-serif; font-size: 28px;}
+h2 {font-size: 20px;}
+h3 {font-size: 18px;}
+
+
+/* ==========================================================================
+	HEADER  
+========================================================================== */
+#main-nav {
+	height: auto;
+	border: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background: #002157;
+}
+	.navbar-collapse {
+		border-color: rgba(255,255,255,.1) !important;
+	}
+
+/*	Main Nav Header  
+========================================================================== */
+.main-nav__header {
+	height: 80px;
+}
+	.main-nav__toggle {
+		width: 30px;
+		height: 34px;
+		margin-top: 24px;
+		margin-right: 20px;
+		padding: 0;
+		border: none;
+		background: #002157 !important;
+	}
+		.main-nav__toggle .icon-bar {
+			width: 100%;
+			height: 1px;
+			margin: 8px 0;
+		}
+		.main-nav__toggle.collapsed .icon-bar {
+			background-color: rgba(255, 255, 255, 0.7) !important;
+		}
+		.main-nav__toggle .icon-bar, 
+		.main-nav__toggle:hover .icon-bar, 
+		.main-nav__toggle:focus .icon-bar {
+			background-color: #FFFFFF !important;
+		}
+	.main-nav__brand {
+		line-height: 50px;
+		width: 200px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-left: 20px;
+		padding: 0;
+		display: block;
+	}
+		.main-nav__brand-image {
+			width: 100%;
+			display: inline-block !important;
+		}
+
+/*	Main Nav Links  
+========================================================================== */
+.main-nav__links-item {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+	.main-nav__links-anchor {
+		font-family: "Roboto", sans-serif;
+		color: rgba(255,255,255,.75) !important;
+		padding: 0 !important;
+	}
+	.main-nav__links-anchor:hover, 
+	.main-nav__links-anchor:focus {
+		color: #FFFFFF !important;
+	}
+
+/*	Header Media Queries  
+========================================================================== */
+@media only screen and (min-width: 768px) {
+	#main-nav {height: 80px;}
+	.main-nav__brand {margin-bottom: 0; margin-left: 0;}
+	.main-nav__links {height: 20px; margin-top: 30px;}
+	.main-nav__links-item {margin-top: 0; margin-bottom: 0; margin-left: 20px; border-left: 1px solid rgba(255,255,255,.5);}
+	.main-nav__links-item:first-child {border-left: none;}
+}
+
+
+/* ==========================================================================
+	MAIN CONTAINER  
+========================================================================== */
+.main-container {
+	padding-bottom: 100px;
+}
+@media only screen and (max-width: 768px) {
+	.main-container {padding-right: 35px; padding-left: 35px;}
+}
+
+/*	Main Heading  
+========================================================================== */
+.main-heading {
+	margin-bottom: 15px;
+}
+	.main-heading__title {
+		color: #002157;
+	}
+
+/*	Main Box  
+========================================================================== */
+.main-box {
+    margin-bottom: 15px;
+}
+	.main-box__panel {
+		margin-bottom: 15px;
+		border-color: #DCDCDE;
+		background: #F6F6F8;
+	}
+	.main-box__panel--no-border {
+		border: none;
+	}
+
+/*	Main Box Heading  */
+.main-box__heading {
+	position: relative;
+	background-color: transparent !important;
+}
+.main-box__heading--no-border {
+	border-bottom: none;
+}
+	.main-box__title {
+		font-size: 20px;
+		color: #666666;
+		padding: 5px 0;
+	}
+	.main-box__title--xsall {
+		font-size: 14px;
+	}
+	.main-box__button {
+		position: absolute;
+		top: 8px;
+		right: 15px;
+	}
+
+/*	Main Box Body  */
+.main-box__body {
+	padding: 15px 0;
+}
+	.main-box__block--left {
+		margin-bottom: 15px;
+	}
+		.main-box__block__wrapper {
+			padding-top: 35px;
+			padding-bottom: 10px;
+			border: 1px solid #D5D5D5;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			background: #FFFFFF;
+		}
+		.main-box__subtitle {
+			margin-top: 5px;
+			color: #666666;
+		}
+		.main-box__list {
+			padding-left: 0;
+			list-style-position: inside;
+		}
+		.main-box__list--formatted {
+			list-style-type: none;
+		}
+			.main-box__list__item {
+				font-size: 12px;
+				color: #666666;
+				margin-bottom: 4px;
+			}
+			.main-box__list__item--separate {
+				min-height: 34px;
+				margin: 10px;
+			}
+
+/*	Main Box Form  */
+.main-box__form {
+	/* padding: 15px 0 0; */
+	padding: 0;
+	background: #F1F1F3;
+}
+	.main-box__form__group {
+		margin-top: 15px;
+		margin-bottom: 0;
+	}
+	.main-box__form__actions {
+		margin: 15px 0;
+	}
+
+/*	Main Data  
+========================================================================== */
+/*	Main Data Table  */
+.main-data__label {
+	font-weight: normal;
+	margin: 4px 0;
+	cursor: pointer;
+}
+.main-data__label--editing {
+	margin: 14px 0;
+}
+.main-data__label--edited:after {
+    font-size: 14px;
+    color: #A7B9C4;
+    text-transform: uppercase;
+    padding-left: 5px;
+    content: " Edited";
+}
+.main-data__input {
+	height: 40px;
+	margin: 4px 0;
+	padding: 6px 12px;
+	border: 2px solid #CCCCCC;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.main-data__checkbox {
+	display:none;
+}
+.main-data__checkbox + span {
+	width: 18px;
+	height: 18px;
+	margin: -1px 4px 0 0;
+	display: inline-block;
+	cursor: pointer;
+	border: 1px solid #CCCCCC;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	vertical-align: middle;
+	/* background: url("../images/checkbox-empty.svg") left top no-repeat; */
+	background: #FFFFFF;
+}
+.main-data__checkbox:checked + span {
+	background: url("../images/checkbox-filled.svg") left top no-repeat;
+}
+
+
+/*	Main Data Legend  */
+.main-data__legend {
+	width: 100%;
+	height: 30px;
+	padding: 0 5px;
+	list-style-type: none;
+}
+	.main-data__legend__item {
+		font-size: 12px;
+		color: #666666;
+		line-height: 30px;
+		height: 30px;
+		margin-right: 30px;
+		float: left;
+	}
+		.main-data__legend__box {
+			width: 24px;
+			height: 12px;
+			margin-right: 5px;
+			display: inline-block;
+			border: 1px solid #EEEEEE;
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+			vertical-align: middle;
+			background: #FFFFFF;
+		}
+		.main-data__legend__box--active {
+			background: #F5F5F5;
+		}
+		.main-data__legend__box--edited {
+			background: #FCF8E3;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

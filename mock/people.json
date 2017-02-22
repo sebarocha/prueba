@@ -1,0 +1,12 @@
+[
+	{"name": "Felipe", "lastname": "Lazo", "taxid": "12.345.678-9", "email": "f.lazo@bancochile.cl", "expenses": "$200.000"},
+	{"name": "Rodrigo", "lastname": "Medel", "taxid": "23.456.789-0", "email": "r.medel@bancochile.cl", "expenses": "$100.000"},
+	{"name": "Juan", "lastname": "Vallejos", "taxid": "12.345.678-9", "email": "j.vallejos@bancochile.cl", "expenses": "$50.000"},
+	{"name": "Alejandro", "lastname": "Rodriguez", "taxid": "23.456.789-0", "email": "a.rodriguez@bancochile.cl", "expenses": "$200.000"},
+	{"name": "John", "lastname": "Doe", "taxid": "12.345.678-9", "email": "j.doe@bancochile.cl", "expenses": "$100.000"},
+	{"name": "Federico", "lastname": "Fernandez", "taxid": "23.456.789-0", "email": "f.fernandez@bancochile.cl", "expenses": "$50.000"},
+	{"name": "Claudio", "lastname": "Baeza", "taxid": "12.345.678-9", "email": "c.baeza@bancochile.cl", "expenses": "$200.000"},
+	{"name": "Benjamin", "lastname": "Rocha", "taxid": "23.456.789-0", "email": "b.rocha@bancochile.cl", "expenses": "$100.000"},
+	{"name": "Ignacio", "lastname": "Manriquez", "taxid": "12.345.678-9", "email": "i.manriquez@bancochile.cl", "expenses": "$50.000"},
+	{"name": "Mario", "lastname": "Pavez", "taxid": "23.456.789-0", "email": "m.pavez@bancochile.cl", "expenses": "$200.000"}
+]

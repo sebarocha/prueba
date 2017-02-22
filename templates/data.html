@@ -1,0 +1,56 @@
+<div class="row  main-data">
+	<!-- Table -->
+	<table class="table  table-bordered  main-data__table">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Name</th>
+				<th>Lastname</th>
+				<th>RUT</th>
+				<th>Email</th>
+				<th>Gastos</th>
+			</tr>
+		</thead>
+		<!-- end thead -->
+
+		<tbody>
+			<tr class="main-data__person" ng-class="{'warning': person.edited, 'active': person.selected}" ng-repeat="person in people">
+				<th scope="row">
+					<input ng-model="person.selected" ng-change="change(person)" type="checkbox" class="main-data__checkbox" />
+					<span ng-click="person.selected = !person.selected;"></span>
+				</th>
+				<td ng-model="person.name">
+					<label ng-class="{'main-data__label--editing': editing}" ng-click="editing = true" ng-hide="editing" ng-click="helloWorld()" class="main-data__label">{{person.name}}</label>
+					<input ng-change="person.edited = true" ng-blur="editing = false;" ng-show="editing" ng-model="person.name" class="main-data__input" type="text"/>
+				</td>
+				<td ng-model="person.lastname">
+					<label ng-class="{'main-data__label--editing': editing}" ng-click="editing = true" ng-hide="editing" ng-click="helloWorld()" class="main-data__label">{{person.lastname}}</label>
+					<input ng-change="person.edited = true" ng-blur="editing = false;" ng-show="editing" ng-model="person.lastname" class="main-data__input" type="text"/>
+				</td>
+				<td ng-model="person.taxid">
+					<label ng-class="{'main-data__label--editing': editing}" ng-click="editing = true" ng-hide="editing" ng-click="helloWorld()" class="main-data__label">{{person.taxid}}</label>
+					<input ng-change="person.edited = true" ng-blur="editing = false;" ng-show="editing" ng-model="person.taxid" class="main-data__input" type="text"/>
+				</td>
+				<td ng-model="person.email">
+					<label ng-class="{'main-data__label--editing': editing}" ng-click="editing = true" ng-hide="editing" ng-click="helloWorld()" class="main-data__label">{{person.email}}</label>
+					<input ng-change="person.edited = true" ng-blur="editing = false;" ng-show="editing" ng-model="person.email" class="main-data__input" type="text"/>
+				</td>
+				<td ng-model="person.expenses">
+					<label ng-class="{'main-data__label--editing': editing}" ng-click="editing = true" ng-hide="editing" ng-click="helloWorld()" class="main-data__label">{{person.expenses}}</label>
+					<input ng-change="person.edited = true" ng-blur="editing = false;" ng-show="editing" ng-model="person.expenses" class="main-data__input" type="text"/>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- end .main-data__table -->
+
+	<ul class="main-data__legend">
+		<li class="main-data__legend__item">
+			<span class="main-data__legend__box  main-data__legend__box--edited"></span> Editado
+		</li>
+		<li class="main-data__legend__item">
+			<span class="main-data__legend__box  main-data__legend__box--active"></span> Seleccionado
+		</li>
+	</ul>
+	<!-- end .main-data__legend -->
+</div>
